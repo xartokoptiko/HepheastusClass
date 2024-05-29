@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org"
+  lang="en"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Innovation Support Tickets</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}" />
+    <style>
+      /* .bg-custom-gradient {
+        background-image: linear-gradient(135deg, #9200AA 0%, #2D2D2D 100%);
+      } */
+    </style>
+  </head>
+  <body>
+    <div
+      class="flex flex-row w-full h-screen bg-custom-gradient py-[50px] px-[35px]"
+    >
+      <div class="flex flex-col w-full items-center justify-center">
+        <img src="/images/hyphestusbg.png" class="w-[400px] h-[400px]" />
+      </div>
+      <div
+        class="flex flex-col w-full items-center justify-center space-y-[30px]"
+      >
+        <p class="text-center w-full text-3xl font-extrabold text-white">
+          Hepheastus E-class
+        </p>
+        <div
+          class="flex flex-col justify-center bg-gray-800 rounded-lg px-20 py-5"
+        >
+          <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+            <h2
+              class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white"
+            >
+              Sign in to your account
+            </h2>
+          </div>
+
+          <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+            <form class="space-y-6" th:action="@{/log-in}" method="post">
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium leading-6 text-white"
+                  >Email address</label
+                >
+                <div class="mt-2">
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    required
+                    class="block w-full rounded-lg border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between">
+                  <label
+                    for="password"
+                    class="block text-sm font-medium leading-6 text-white"
+                    >Password</label
+                  >
+                </div>
+                <div class="mt-2">
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    autocomplete="current-password"
+                    required
+                    class="block w-full rounded-lg border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  class="flex w-full mb-10 justify-center rounded-md bg-customPurple px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Sign in
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script></script>
+
+<!--<form th:action="@{/log-in}" method="post">-->
+<!--    <div class="filters filters&#45;&#45;vertical">-->
+<!--        <div class="filters__block">-->
+<!--            <div class="title title&#45;&#45;sm">Username</div>-->
+<!--            <input type="text" name="username" id="username" />-->
+<!--        </div>-->
+<!--        <div class="filters__block">-->
+<!--            <div class="title title&#45;&#45;sm">Password</div>-->
+<!--            <input type="password" name="password" id="password" />-->
+<!--        </div>-->
+<!--        <div class="filters__block filters__block&#45;&#45;flex">-->
+<!--            <label>-->
+<!--                <input type="checkbox" />-->
+<!--                <span>Active</span>-->
+<!--            </label>-->
+<!--        </div>-->
+<!--        <input type="submit" class="btn btn&#45;&#45;full" value="Log in" />-->
+<!--    </div>-->
+<!--</form>-->
